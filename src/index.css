@@ -1,13 +1,105 @@
+/* إعدادات عامة للجسم */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f8f8; /* لون الخلفية الافتراضي */
 }
 
+/* إعدادات الخطوط العامة */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+/* خلفية اللون العام */
+.color-body {
+  height: 100vh;
+  background-color: #f8f8f8;
+}
+
+/* إعدادات الخطوط */
+.font {
+  font-family: "Almarai", sans-serif;
+  font-size: 15px;
+}
+
+/* أزرار عامة */
+.btn-color {
+  border: none;
+  border-radius: 8px;
+  color: white;
+  background-color: #224f61;
+  padding: 8px 16px;
+  transition: color 0.3s ease;
+}
+
+.btn-color:hover {
+  color: rgb(148, 148, 162);
+}
+
+/* صورة الأفاتار */
+.img-avatar {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* هوامش */
+.mt-0 {
+  margin-top: 0;
+}
+
+/* تنسيق العناوين والوصف */
+.font-title,
+.font-decription {
+  font-family: "Almarai", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+.font-title {
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.font-decription {
+  color: #8c8c8c;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* أزرار التصويت */
+.btn-vote {
+  border: none;
+  border-radius: 8px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* زر التصويت للأعلى */
+.btn-vote.up {
+  background-color: #28a745;
+  color: white;
+}
+
+.btn-vote.up:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+/* زر التصويت للأسفل */
+.btn-vote.down {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-vote.down:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
 }
